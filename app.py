@@ -47,7 +47,7 @@ def visualize_confidence_level(prediction_proba):
     return
 
 st.write("""
-# Test-Wine Quality Prediction ML Web-App 
+# Wine Quality Prediction ML Web-App 
 This app predicts the ** Quality of Wine **  using **wine features** input via the **side panel** 
 """)
 
