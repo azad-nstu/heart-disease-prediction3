@@ -80,11 +80,12 @@ processed_user_input = data_preprocessor(user_input_df)
 st.subheader('User Input parameters')
 st.write(user_input_df)
 
-prediction = model.predict(processed_user_input)
+# prediction = model.predict(processed_user_input)
 
 # creating a button for Prediction 
 heart_diagnosis = ''
-if st.button('Heart Disease Diagnosis'):       
+if st.button('Heart Disease Diagnosis'):  
+    prediction = model.predict(processed_user_input)
     if (prediction[0] == 1):
         heart_diagnosis = 'The person is having heart disease'
     else:
