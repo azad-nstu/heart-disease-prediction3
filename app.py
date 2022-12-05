@@ -54,8 +54,8 @@ def get_user_input():
     AgeCategory = st.sidebar.selectbox("Whats your age range?",("18-24", "25-29","30-34","35-39","40-44","45-49","50-54","55-59","60-64","65-69","70-74","75-79","80 or older"))
     GenHealth = st.sidebar.selectbox("What's your general health condition?",("Excellent", "Very good","Good","Fair","Poor"))
     
-    PhysicalHealth = st.sidebar.slider('PhysicalHealth', 0.0, 30.0, 1.0)
-    BMI = st.sidebar.slider('BMI', 12.0, 94.85, 0.01)
+    PhysicalHealth = st.sidebar.slider('PhysicalHealth', 0, 30, 1)
+    BMI = st.sidebar.slider('BMI', 12, 95, 1)
      
     features = {'Smoking': Smoking,
             'Stroke': Stroke,
