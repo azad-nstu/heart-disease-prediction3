@@ -34,9 +34,9 @@ This app predicts the possibility of heart attck by analyzing different habitual
 
 #read in wine image and render with streamlit
 image = Image.open('heart_attack.jpg')
-st.image(image, caption='wine company',use_column_width=True)
+st.image(image, caption='A heart disease scenario',use_column_width=True)
 
-st.sidebar.header('User Input Parameters') #user input parameter collection with streamlit side bar
+st.sidebar.header('Please answer the following') #user input parameter collection with streamlit side bar
 
 def get_user_input():
     """
@@ -78,7 +78,7 @@ def get_user_input():
 user_input_df = get_user_input()
 processed_user_input = data_preprocessor(user_input_df)
 
-st.subheader('User Input parameters')
+st.subheader('Input parameters')
 st.write(user_input_df)
 
 # prediction = model.predict(processed_user_input)
