@@ -28,7 +28,7 @@ def data_preprocessor(df):
 
 st.write("""
 # Heart Disease Prediction using ML Model 
-by **Abul Kalam Azad**
+by **Abul Kalam Azad.**
 This app predicts the possibility of heart attck by analyzing different habitual and physical condition using Machine Learning model.
 """)
 
