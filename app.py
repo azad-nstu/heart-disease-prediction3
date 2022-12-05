@@ -28,7 +28,8 @@ def data_preprocessor(df):
 
 st.write("""
 # Heart Disease Prediction using ML Model 
-This app predicts the ** Quality of Wine **  using **wine features** input via the **side panel** 
+by **Abul Kalam Azad**
+This app predicts the possibility of heart attck by analyzing different habitual and physical condition using Machine Learning model.
 """)
 
 #read in wine image and render with streamlit
@@ -86,7 +87,7 @@ st.write(user_input_df)
 heart_diagnosis = ''
 if st.button('Heart Disease Diagnosis'):  
     prediction = model.predict(processed_user_input)
-    if (prediction[0] == 1):
+    if (prediction[0] == 0):
         heart_diagnosis = 'The person is having heart disease'
     else:
         heart_diagnosis = 'The person does not having heart disease'
