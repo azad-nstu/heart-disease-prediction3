@@ -87,7 +87,7 @@ st.write(user_input_df)
 heart_diagnosis = ''
 if st.button('Heart Disease Diagnosis'):  
     prediction = model.predict(processed_user_input)
-    if (prediction[0] == 0):
+    if (prediction[0] == 1):
         heart_diagnosis = 'The person is having heart disease'
     else:
         heart_diagnosis = 'The person does not having heart disease'
