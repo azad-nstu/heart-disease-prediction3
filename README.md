@@ -1,4 +1,4 @@
-# A Machine Learning Web Application to predict Heart Disease
+# A Machine Learning Web Application to Predict Heart Disease
 - Code witten in python
 - model trainned with Jupyter Notebook
 - web application built with Streamlit 
