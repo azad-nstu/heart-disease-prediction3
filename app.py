@@ -7,7 +7,7 @@ import streamlit as st
 from PIL import Image
 
 # Load  model a 
-model = joblib.load(open("decision_tree_model.joblib","rb"))
+model = joblib.load(open("logistic_regression_model.joblib","rb"))
 
 def data_preprocessor(df):
     """this function preprocess the user input
