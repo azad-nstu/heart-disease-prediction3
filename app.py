@@ -7,7 +7,7 @@ import streamlit as st
 from PIL import Image
 
 # Load  model a 
-model = joblib.load(open("decision_tree_model.sav","rb"))
+model = joblib.load("decision_tree_model.sav","rb")
 
 def data_preprocessor(df):
     """this function preprocess the user input
