@@ -76,7 +76,7 @@ if (selected == 'Heart Disease Prediction'):
     # creating a button for Prediction
     
     if st.button('Heart Disease Test Result'):
-        heart_prediction = decision_tree_model.predict([[Smoking, Stroke, DiffWalking, Sex, Diabetic, PhysicalActivity, KidneyDisease, SkinCancer, AgeCategory, GenHealth, PhysicalHealth, BMI]])                          
+        heart_prediction = model.predict([[Smoking, Stroke, DiffWalking, Sex, Diabetic, PhysicalActivity, KidneyDisease, SkinCancer, AgeCategory, GenHealth, PhysicalHealth, BMI]])                          
         
         if (heart_prediction[0] == 1):
           heart_diagnosis = 'The person is having heart disease'
