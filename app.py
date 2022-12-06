@@ -7,7 +7,7 @@ import streamlit as st
 from PIL import Image
 
 # Load  model a 
-model = joblib.load(open("logistic_regression_model.joblib","rb"))
+model = joblib.load(open("decision_tree_model.joblib","rb"))
 
 def data_preprocessor(df):
     """this function preprocess the user input
@@ -88,7 +88,7 @@ heart_diagnosis = ''
 if st.button('Heart Disease Diagnosis'):  
     prediction = model.predict(processed_user_input)
     if (prediction[0] == 1):
-        heart_diagnosis = 'The person is having heart disease: prediction[0]'
+        heart_diagnosis = 'The person is having heart disease'
     else:
         heart_diagnosis = 'The person does not having heart disease'
         
