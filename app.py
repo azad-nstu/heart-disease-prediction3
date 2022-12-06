@@ -83,12 +83,14 @@ st.write(user_input_df)
 # prediction = model.predict(processed_user_input)
 
 # creating a button for Prediction 
-heart_diagnosis = ''
+#heart_diagnosis = ''
 if st.button('Heart Disease Diagnosis'):  
     prediction = model.predict(processed_user_input)
-    if (prediction[0] == 1):
-        heart_diagnosis = 'The person is having heart disease'
+    if prediction == 1:
+        #heart_diagnosis = 'The person is having heart disease'
+        st.success('The person is having heart disease')
     else:
-        heart_diagnosis = 'The person does not having heart disease'
+        #heart_diagnosis = 'The person does not having heart disease'
+        st.success('The person does not having heart disease')
         
-st.success(heart_diagnosis)
+#st.success(heart_diagnosis)
