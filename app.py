@@ -8,7 +8,7 @@ from PIL import Image
 from streamlit_option_menu import option_menu
 
 # Load  model a 
-model = joblib.load(open("decision_tree_model.joblib","rb"))
+model = joblib.load(open("logistic_regression_model.joblib","rb"))
 
 
 # sidebar for navigation
