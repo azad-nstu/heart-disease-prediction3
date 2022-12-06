@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import StrMethodFormatter
 import streamlit as st
 from PIL import Image
+from streamlit_option_menu import option_menu
 
 # Load  model a 
 model = joblib.load(open("decision_tree_model.joblib","rb"))
